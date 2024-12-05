@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Musician Survey</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Musician Survey</h1>
+    <p id="description">We'd love to hear more about your musical journey. Please fill out this survey!</p>
+    
+    <form id="survey-form">
+      <fieldset class="fieldset">
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">Full Name:</label>
+        <input name="name" id="name" type="text" placeholder="e.g. Max Mustermann" required>
+
+        <label for="email" id="email-label">Email:</label>
+        <input name="email" id="email" type="email" placeholder="e.g. M.Musterman@example.de" required>
+
+        <label for="age" id="number-label">Age:</label>
+        <input name="age" id="number" type="number" placeholder="e.g. 25" required min="18" max="99">
+      </fieldset>
+      
+      <fieldset class="fieldset">
+        <legend>Musical Background</legend>
+        <label for="dropdown">How would you rate your musicality?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="">(Select One)</option>
+          <option value="1">Very Bad</option>
+          <option value="2">Bad</option>
+          <option value="3">Medium</option>
+          <option value="4">Good</option>
+          <option value="5">Very Good</option>
+        </select>
+
+        <p id="instrument-header">Do you play an instrument?</p>
+        <div class="radio-group">
+          <label><input name="instrument" id="yes_instrument_multiple" type="radio" value="2"> Yes, multiple</label>
+          <label><input name="instrument" id="yes_instrument" type="radio" value="1"> Yes, one</label>
+          <label><input name="instrument" id="no-instrument" type="radio" value="0" checked> No</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Listening Habits</legend>
+        <p>How do you listen to music?</p>
+        <div class="checkbox-group">
+          <label><input name="listening" id="check_vinyl" type="checkbox" value="2"> Vinyl</label>
+          <label><input name="listening" id="check_streaming" type="checkbox" value="1" checked> Streaming Service</label>
+          <label><input name="listening" id="check_other" type="checkbox" value="2"> Other</label>
+        </div>
+      </fieldset>
+
+      <fieldset class="fieldset">
+        <legend>Music's Meaning</legend>
+        <p>What does music mean to you?</p>
+        <textarea name="bio" id="bio" rows="4" placeholder="...Music was my first love" required></textarea>
+      </fieldset>
+
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© Vincent Lovasz. All rights reserved</p>
+</footer>
+</body>
+</html>
