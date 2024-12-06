@@ -1,0 +1,109 @@
+/* General Reset */
+body, h1, p, label, input, select, textarea, button, fieldset, legend {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  #description {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+  }
+  
+  fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  legend {
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Styling for radio and checkbox groups */
+  .radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .radio-group label, .checkbox-group label {
+    margin-bottom: 0;
+    background-color: #f4f4f4;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .radio-group label:hover, .checkbox-group label:hover {
+    background-color: #e0f7fa;
+  }
+  
+  input[type="radio"]:checked + label, input[type="checkbox"]:checked + label {
+    background-color: #3498db;
+    color: #fff;
+    border-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
